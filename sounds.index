@@ -1,5 +1,5 @@
 {
-    "translationCatalog" : "ambience-%ProjectName%",
+    "translationCatalog" : "harbour-ambience-%ProjectName%",
     "files" : [
         { "displayName" : "%ProjectName%-ringtone"          , "fileName" : "%ProjectName%-ringtone.wav" },
         { "displayName" : "%ProjectName%-messagetone"       , "fileName" : "%ProjectName%-message.wav" },

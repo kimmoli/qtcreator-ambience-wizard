@@ -1,6 +1,6 @@
 {
-    "translationCatalog"        : "ambience-%ProjectName%",
-    "displayName"               : "ambience-%ProjectName%-name",
+    "translationCatalog"        : "harbour-ambience-%ProjectName%",
+    "displayName"               : "%ProjectName%",
     "ringerToneFile"            : { "file": "%ProjectName%-ringtone.wav", "enabled": 1 },
     "messageToneFile"           : { "file": "%ProjectName%-message.wav",  "enabled": 1 },
     "mailToneFile"              : { "file": "%ProjectName%-email.wav",    "enabled": 1 },

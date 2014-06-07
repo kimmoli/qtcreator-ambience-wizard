@@ -1,6 +1,6 @@
 TEMPLATE = aux
 
-NAME=ambience-%ProjectName%
+NAME=harbour-ambience-%ProjectName%
 
 OTHER_FILES = \
         $${NAME}.ambience \

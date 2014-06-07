@@ -2,8 +2,8 @@ import QtQuick 2.0
 
 Item {
     function qsTrIdString() {
-        //% "%ProjectName% Ambience Name"
-        QT_TRID_NOOP("ambience-%ProjectName%-name")
+        //% "Ambience Name"
+        QT_TRID_NOOP("harbour-ambience-%ProjectName%")
         //% "Ringtone"
         QT_TRID_NOOP("%ProjectName%-ringtone")
         //% "IM tone"

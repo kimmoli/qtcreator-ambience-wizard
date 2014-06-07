@@ -46,7 +46,7 @@
 		<file source="LICENSE" target="LICENSE"/>
 		<file source="README.md" target="README.md"/>
 		<file source="README.jolla" target="README.jolla"/>
-		<file source="ambience-template.ambience" target="ambience-%ProjectName%.ambience"/>
+		<file source="ambience-template.ambience" target="harbour-ambience-%ProjectName%.ambience"/>
 		<!-- files in images -->
 		<file source="images/template.png" target="images/%ProjectName%.png" binary="true"/>
 		<!-- files in rpm -->
