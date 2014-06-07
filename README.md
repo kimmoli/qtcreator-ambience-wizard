@@ -1,5 +1,7 @@
 # harbour-ambience-template
 
+See also here https://github.com/stephgosling/harbour-ambience-template
+
 A reworking of the ambience template originally provided by Jolla for
 SailfishOS. The original was distributed in the Other Half Development Kit
 (http://jolla.com/the-other-half-developer-kit), but doesn't build out of the
@@ -14,21 +16,21 @@ this git repository.
 
 ## Usage
 
-First, git clone the repo. Launch the SDK, open the .pro file and configure the
-project. The project should build out-of-the-box but that will leave you with 
-an RPM named harbour-ambience-template-0.1.0-0.1.noarch.rpm, empty sounds and 
-an ugly wallpaper. The personalisation steps involve:
-- Changing harbour-ambience-template to harbour-ambience-yourcoolambiencename everywhere
+First, git clone the repo under /SailfishOS/share/qtcreator/templates/wizards/. 
+Launch the SDK, create a new project with **SailfishOS**, **Jolla Ambience** and configure it. 
+The project should build out-of-the-box but that will leave you with 
+an RPM named harbour-ambience-*ProjectName*-0.1.0-0.1.noarch.rpm, empty sounds and 
+an white wallpaper. The personalisation steps involve:
 - Adding your own wallpaper
 - Adding and/or configuring your own sounds
-- Correcting the RPM .spec file for your name, email address, description etc.
+- Correcting the RPM .spec file for your name and email address (Vendor)
 
 ## Notes
 
 - See the original README.Jolla for specifics on ambience behaviour
 - Tested against the SDK, needs testing on OBS/Chum
 - The translation skeleton is there but is completely untested
-- I chose to rename the package/files generated to harbour-ambience-template as
+- I chose to rename the package/files generated to harbour-ambience-*ProjectName* as
 they were initially confusing, to be broadly in line with harbour submission
 guidelines and to try to impose a little structure as currently there is none. You can in principle name them anything.
 
