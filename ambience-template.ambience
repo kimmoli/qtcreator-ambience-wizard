@@ -8,7 +8,7 @@
     "chatToneFile"              : { "file": "%ProjectName%-chat.wav",     "enabled": 1 },
     "calendarToneFile"          : { "file": "%ProjectName%-calendar.wav", "enabled": 1 },
     "clockAlarmToneFile"        : { "file": "%ProjectName%-alarm.wav",    "enabled": 1 },
-    "wallpaper"                 : "%ProjectName%.png",
+    "wallpaper"                 : "%ProjectName%.jpg",
     "highlightColor"            : "#FF9D80",
     "secondaryHighlightColor"   : "#FF9D8099",
     "primaryColor"              : "#FFFFFF",
