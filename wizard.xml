@@ -37,7 +37,7 @@
         id="Q.SailfishOSOmaApplication" category="F.QtApplications"
         featuresRequired="Mer.Wizard.Feature.SailfishOS">
     <description>Creates a Jolla Ambience</description>
-    <displayname>Jolla ambience</displayname>;
+    <displayname>Jolla Ambience</displayname>;
     <displaycategory>SailfishOS</displaycategory>
     <files>
 		<!-- files in root -->
@@ -76,6 +76,14 @@
         <field name="Description">
             <fieldcontrol class="QTextEdit" defaulttext="Short description of my Jolla Ambience"/>
             <fielddescription>Description:</fielddescription>
+        </field>
+        <field name="Vendor">
+            <fieldcontrol class="QLineEdit" defaulttext="Your Name"/>
+            <fielddescription>Vendor:</fielddescription>
+        </field>
+        <field name="Packager">
+            <fieldcontrol class="QLineEdit" defaulttext="Your Name &lt;your@email&gt;"/>
+            <fielddescription>Packager:</fielddescription>
         </field>
     </fields>
 </wizard>

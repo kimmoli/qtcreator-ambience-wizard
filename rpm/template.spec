@@ -10,8 +10,8 @@ BuildArch:  noarch
 BuildRequires:  qt5-qttools
 BuildRequires:  qt5-qttools-linguist
 BuildRequires:  qt5-qmake
-Vendor: Your Name
-Packager: Your Name <your@email>
+Vendor: %Vendor%
+Packager: %Packager%
 
 # This requirement is verboten for Harbour submission
 Requires:   ambienced
