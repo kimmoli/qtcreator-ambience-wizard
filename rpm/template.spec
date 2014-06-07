@@ -1,4 +1,4 @@
-Name:       harbour-ambience-%ProjectName%
+Name:       harbour-ambience-%ProjectName:l%
 
 Summary:    %Summary%
 Version:    %Version%

@@ -1,11 +1,11 @@
 {
-    "translationCatalog" : "harbour-ambience-%ProjectName%",
+    "translationCatalog" : "harbour-ambience-%ProjectName:l%",
     "files" : [
-        { "displayName" : "%ProjectName%-ringtone"          , "fileName" : "%ProjectName%-ringtone.wav" },
-        { "displayName" : "%ProjectName%-messagetone"       , "fileName" : "%ProjectName%-message.wav" },
-        { "displayName" : "%ProjectName%-imtone"            , "fileName" : "%ProjectName%-im.wav" },
-        { "displayName" : "%ProjectName%-emailtone"         , "fileName" : "%ProjectName%-email.wav" },
-        { "displayName" : "%ProjectName%-calendar-alarm"    , "fileName" : "%ProjectName%-calendar.wav" },
-        { "displayName" : "%ProjectName%-clock-alarm"       , "fileName" : "%ProjectName%-clock.wav" }
+        { "displayName" : "%ProjectName%-ringtone"          , "fileName" : "%ProjectName:l%-ringtone.wav" },
+        { "displayName" : "%ProjectName%-messagetone"       , "fileName" : "%ProjectName:l%-message.wav" },
+        { "displayName" : "%ProjectName%-imtone"            , "fileName" : "%ProjectName:l%-im.wav" },
+        { "displayName" : "%ProjectName%-emailtone"         , "fileName" : "%ProjectName:l%-email.wav" },
+        { "displayName" : "%ProjectName%-calendar-alarm"    , "fileName" : "%ProjectName:l%-calendar.wav" },
+        { "displayName" : "%ProjectName%-clock-alarm"       , "fileName" : "%ProjectName:l%-clock.wav" }
     ]
 }

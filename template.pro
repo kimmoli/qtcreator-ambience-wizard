@@ -1,6 +1,6 @@
 TEMPLATE = aux
 
-NAME=harbour-ambience-%ProjectName%
+NAME=harbour-ambience-%ProjectName:l%
 
 OTHER_FILES = \
         $${NAME}.ambience \
@@ -9,7 +9,7 @@ OTHER_FILES = \
         sounds/* \
         translations/* \
         rpm/* \
-        README.Jolla \
+        README.jolla \
         README.md
 
 ambience.files = \

@@ -41,24 +41,24 @@
     <displaycategory>SailfishOS</displaycategory>
     <files>
 		<!-- files in root -->
-        <file source="template.pro" target="%ProjectName%.pro" openproject="true"/>
+        <file source="template.pro" target="%ProjectName:l%.pro" openproject="true"/>
 		<file source="sounds.index" target="sounds.index"/>
 		<file source="LICENSE" target="LICENSE"/>
 		<file source="README.md" target="README.md"/>
 		<file source="README.jolla" target="README.jolla"/>
-		<file source="ambience-template.ambience" target="harbour-ambience-%ProjectName%.ambience"/>
+		<file source="ambience-template.ambience" target="harbour-ambience-%ProjectName:l%.ambience"/>
 		<!-- files in images -->
-		<file source="images/template.jpg" target="images/%ProjectName%.jpg" binary="true"/>
+		<file source="images/template.jpg" target="images/%ProjectName:l%.jpg" binary="true"/>
 		<!-- files in rpm -->
-		<file source="rpm/template.spec" target="rpm/%ProjectName%.spec"/>
+		<file source="rpm/template.spec" target="rpm/%ProjectName:l%.spec"/>
 		<!-- files in sounds -->
-		<file source="sounds/template-alarm.wav" target="sounds/%ProjectName%-alarm.wav" binary="true"/>
-		<file source="sounds/template-calendar.wav" target="sounds/%ProjectName%-calendar.wav" binary="true"/>
-		<file source="sounds/template-chat.wav" target="sounds/%ProjectName%-chat.wav" binary="true"/>
-		<file source="sounds/template-email.wav" target="sounds/%ProjectName%-email.wav" binary="true"/>
-		<file source="sounds/template-im.wav" target="sounds/%ProjectName%-im.wav" binary="true"/>
-		<file source="sounds/template-message.wav" target="sounds/%ProjectName%-message.wav" binary="true"/>
-		<file source="sounds/template-ringtone.wav" target="sounds/%ProjectName%-ringtone.wav" binary="true"/>
+		<file source="sounds/template-alarm.wav" target="sounds/%ProjectName:l%-alarm.wav" binary="true"/>
+		<file source="sounds/template-calendar.wav" target="sounds/%ProjectName:l%-calendar.wav" binary="true"/>
+		<file source="sounds/template-chat.wav" target="sounds/%ProjectName:l%-chat.wav" binary="true"/>
+		<file source="sounds/template-email.wav" target="sounds/%ProjectName:l%-email.wav" binary="true"/>
+		<file source="sounds/template-im.wav" target="sounds/%ProjectName:l%-im.wav" binary="true"/>
+		<file source="sounds/template-message.wav" target="sounds/%ProjectName:l%-message.wav" binary="true"/>
+		<file source="sounds/template-ringtone.wav" target="sounds/%ProjectName:l%-ringtone.wav" binary="true"/>
 		<!-- files in translations -->
 		<file source="translations/AmbienceTranslations.qml" target="translations/AmbienceTranslations.qml"/>
     </files>
