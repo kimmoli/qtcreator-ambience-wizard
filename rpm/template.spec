@@ -6,10 +6,14 @@ Release:    1
 Group:      System/GUI/Other
 License:    TBD
 Source0:    %{name}-%{version}.tar.bz2
+BuildArch:  noarch
 BuildRequires:  qt5-qttools
 BuildRequires:  qt5-qttools-linguist
 BuildRequires:  qt5-qmake
+Vendor: Your Name
+Packager: Your Name <your@email>
 
+# This requirement is verboten for Harbour submission
 Requires:   ambienced
 
 %description
@@ -26,39 +30,33 @@ Translation source for a %ProjectName% ambience
 %prep
 %setup -q -n %{name}-%{version}
 
-# >> setup
-# << setup
-
 %build
-# >> build pre
-# << build pre
 
 %qtc_qmake5
 
 %qtc_make %{?_smp_mflags}
 
-# >> build post
-# << build post
-
 %install
 rm -rf %{buildroot}
-# >> install pre
-# << install pre
 %qmake5_install
-
-# >> install post
-# << install post
-
-
 
 %files
 %defattr(-,root,root,-)
-%{_datadir}/ambience/ambience-%ProjectName%/ambience-%ProjectName%.ambience
-%{_datadir}/ambience/ambience-%ProjectName%/sounds.index
-%{_datadir}/ambience/ambience-%ProjectName%/images/*
-%{_datadir}/ambience/ambience-%ProjectName%/sounds/*
-%{_datadir}/translations/ambience-%ProjectName%_eng_en.qm
+# Without the root directory specified it will not be removed on uninstall
+%{_datadir}/ambience/%{name}
+%{_datadir}/ambience/%{name}/%{name}.ambience
+%{_datadir}/ambience/%{name}/sounds.index
+%{_datadir}/ambience/%{name}/images/*
+%{_datadir}/ambience/%{name}/sounds/*
+%{_datadir}/translations/%{name}_eng_en.qm
 
-%files -n ambience-%ProjectName%-ts-devel
+%files ts-devel
 %defattr(-,root,root,-)
-%{_datadir}/translations/source/ambience-%ProjectName%.ts
+%{_datadir}/translations/source/%{name}.ts
+
+
+# Scripts are verboten for Harbour submission, this is only needed for
+# install methods _other_ than the Store.
+%post
+systemctl-user restart ambienced.service
+

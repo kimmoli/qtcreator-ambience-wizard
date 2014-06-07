@@ -44,7 +44,8 @@
         <file source="template.pro" target="%ProjectName%.pro" openproject="true"/>
 		<file source="sounds.index" target="sounds.index"/>
 		<file source="LICENSE" target="LICENSE"/>
-		<file source="README" target="README"/>
+		<file source="README.md" target="README.md"/>
+		<file source="README.jolla" target="README.jolla"/>
 		<file source="ambience-template.ambience" target="ambience-%ProjectName%.ambience"/>
 		<!-- files in images -->
 		<file source="images/template.png" target="images/%ProjectName%.png" binary="true"/>
@@ -59,7 +60,6 @@
 		<file source="sounds/template-message.wav" target="sounds/%ProjectName%-message.wav" binary="true"/>
 		<file source="sounds/template-ringtone.wav" target="sounds/%ProjectName%-ringtone.wav" binary="true"/>
 		<!-- files in translations -->
-		<file source="translations/ambience-template.ts" target="translations/ambience-%ProjectName%.ts"/>
 		<file source="translations/AmbienceTranslations.qml" target="translations/AmbienceTranslations.qml"/>
     </files>
     <fieldpagetitle>Ambience Details</fieldpagetitle>

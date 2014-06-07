@@ -2,8 +2,6 @@ TEMPLATE = aux
 
 NAME=ambience-%ProjectName%
 
-system(sed 's/\x0D$//' $$PWD/rpm/%ProjectName%.spec > $$PWD/rpm/%ProjectName%.spec)
-
 OTHER_FILES = \
         $${NAME}.ambience \
         sounds.index \
@@ -11,7 +9,8 @@ OTHER_FILES = \
         sounds/* \
         translations/* \
         rpm/* \
-        README
+        README.Jolla \
+        README.md
 
 ambience.files = \
         $${NAME}.ambience \
@@ -24,8 +23,8 @@ images.path = $${ambience.path}/images
 sounds.files = sounds/*
 sounds.path = $${ambience.path}/sounds
 
-TS_FILE = $$OUT_PWD/translations/$${NAME}.ts
-EE_QM = $$OUT_PWD/translations/$${NAME}_eng_en.qm
+TS_FILE = $$OUT_PWD/$${NAME}.ts
+EE_QM = $$OUT_PWD/$${NAME}_eng_en.qm
 
 ts.commands += lupdate $$IN_PWD/ -ts $$TS_FILE
 ts.CONFIG += no_check_exist no_link
