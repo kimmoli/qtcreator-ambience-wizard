@@ -1,4 +1,4 @@
-# harbour-ambience-template
+# harbour-ambience-qtcreator-wizard
 
 See also here https://github.com/stephgosling/harbour-ambience-template
 
@@ -24,6 +24,7 @@ an white wallpaper. The personalisation steps involve:
 - Adding your own wallpaper
 - Adding and/or configuring your own sounds
 - Correcting the RPM .spec file for your name and email address (Vendor)
+- If using Windows you must dos2unix the spec file (change CRLF to LF)
 
 ## Notes
 
