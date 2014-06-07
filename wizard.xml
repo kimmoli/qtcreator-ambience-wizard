@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/****************************************************************************
+**
+** Copyright (C) 2012 Digia Plc and/or its subsidiary(-ies).
+** Contact: http://www.qt-project.org/legal
+**
+** This file is part of Qt Creator.
+**
+** Modified for Ambience package - 2014 by kimmoli
+**
+** Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and Digia.  For licensing terms and
+** conditions see http://qt.digia.com/licensing.  For further information
+** use the contact form at http://qt.digia.com/contact-us.
+**
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 2.1 as published by the Free Software
+** Foundation and appearing in the file LICENSE.LGPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU Lesser General Public License version 2.1 requirements
+** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+**
+** In addition, as a special exception, Digia gives you certain additional
+** rights.  These rights are described in the Digia Qt LGPL Exception
+** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
+**
+****************************************************************************/
+-->
+
+<wizard version="1" kind="project"
+        class="qt4project" firstpage="10"
+        id="Q.SailfishOSOmaApplication" category="F.QtApplications"
+        featuresRequired="Mer.Wizard.Feature.SailfishOS">
+    <description>Creates a Jolla Ambience</description>
+    <displayname>Jolla ambience</displayname>;
+    <displaycategory>SailfishOS</displaycategory>
+    <files>
+		<!-- files in root -->
+        <file source="template.pro" target="%ProjectName%.pro" openproject="true"/>
+		<file source="sounds.index" target="sounds.index"/>
+		<file source="LICENSE" target="LICENSE"/>
+		<file source="README" target="README"/>
+		<file source="ambience-template.ambience" target="ambience-%ProjectName%.ambience"/>
+		<!-- files in images -->
+		<file source="images/template.png" target="images/%ProjectName%.png" binary="true"/>
+		<!-- files in rpm -->
+		<file source="rpm/template.spec" target="rpm/%ProjectName%.spec"/>
+		<!-- files in sounds -->
+		<file source="sounds/template-alarm.wav" target="sounds/%ProjectName%-alarm.wav" binary="true"/>
+		<file source="sounds/template-calendar.wav" target="sounds/%ProjectName%-calendar.wav" binary="true"/>
+		<file source="sounds/template-chat.wav" target="sounds/%ProjectName%-chat.wav" binary="true"/>
+		<file source="sounds/template-email.wav" target="sounds/%ProjectName%-email.wav" binary="true"/>
+		<file source="sounds/template-im.wav" target="sounds/%ProjectName%-im.wav" binary="true"/>
+		<file source="sounds/template-message.wav" target="sounds/%ProjectName%-message.wav" binary="true"/>
+		<file source="sounds/template-ringtone.wav" target="sounds/%ProjectName%-ringtone.wav" binary="true"/>
+		<!-- files in translations -->
+		<file source="translations/ambience-template.ts" target="translations/ambience-%ProjectName%.ts"/>
+		<file source="translations/AmbienceTranslations.qml" target="translations/AmbienceTranslations.qml"/>
+    </files>
+    <fieldpagetitle>Ambience Details</fieldpagetitle>
+    <fields>
+	
+        <field mandatory="true" name="Summary">
+            <fieldcontrol class="QLineEdit" defaulttext="My Jolla Ambience" />
+            <fielddescription>Summary:</fielddescription>
+        </field>
+        <field mandatory="true" name="Version">
+            <fieldcontrol class="QLineEdit" defaulttext="0.1" />
+            <fielddescription>Version:</fielddescription>
+        </field>
+        <field name="Description">
+            <fieldcontrol class="QTextEdit" defaulttext="Short description of my Jolla Ambience"/>
+            <fielddescription>Description:</fielddescription>
+        </field>
+    </fields>
+</wizard>
